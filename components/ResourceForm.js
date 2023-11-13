@@ -8,7 +8,7 @@ const DEFAULT_DATA = {
   timeToFinish: 60,
 };
 
-const ResourceForm = ({ onFormSubmit, initialData,formTitle }) => {
+const ResourceForm = ({ onFormSubmit, initialData, formTitle }) => {
   const [form, setForm] = useState(initialData || DEFAULT_DATA);
 
   const resetForm = () => setForm(DEFAULT_DATA);
@@ -63,7 +63,8 @@ const ResourceForm = ({ onFormSubmit, initialData,formTitle }) => {
               name="link"
               className="input"
               type="text"
-              placeholder="https://academy.eincode.com"
+              placeholder="https://tanapon-poonsanchai.com"
+              autoComplete="false"
             />
           </div>
         </div>
